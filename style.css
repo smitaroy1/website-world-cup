@@ -1,0 +1,222 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: auto 0px; 
+    padding: 0;
+}
+/* Header Section */
+.the-earth{
+    margin: auto 60px;
+}
+
+.upcoming{
+    text-decoration: none;
+}
+.btns:hover{
+    background-color: red;
+    color: #F7F0FF;
+}
+.btn a::before{
+    background-color: red;
+}
+.link{
+    text-decoration: none;
+    padding: 10px 50px;
+    background-color: rgb(206, 12, 109);
+    border-radius: 10px;
+    color: white;
+}
+
+.half-width{
+    display: flex;
+    background-color: black;
+    margin: 40px 0px 40px 0px;
+    border-radius: 20px;
+}
+
+.half-widthH1{
+    font-size: 50px;
+}
+
+.half-widthH1, .half-widthP{
+    color: #F7F0FF ;
+}
+.HeaderText{
+    width: 500px;
+    padding: 30px;
+    margin-left: 50px;
+}
+.Header-img{
+    width: 400px;
+}
+.imgs{
+    width:500px;
+}
+
+/* Home Section*/
+.HomeBody{
+margin: auto 60px;
+display: flex;
+}
+
+.card{
+   display: grid;
+   width: 1050px;
+   grid-template-columns:1fr 1fr 1fr;
+   grid-gap: 15px;
+   
+}
+
+.cards{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.btn{
+    display:inline-block;
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.btns{
+    display: block;
+    margin: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+   
+}
+.cardsText{
+    margin-left: 15px;
+}
+.cartBtn{
+margin: 15px 0px 0px 0px;
+ width: 100px;
+ height: 30px;
+ border: 1px solid black;
+ border-radius: 5px;
+ font-size: 15px;
+ font-weight: bold;
+ background-color: white;
+}
+
+.course-info{
+display: flex;
+margin-bottom: 20px;
+}
+.icons{
+    margin-left: 40px;
+}
+.con{
+    color: gray;
+}
+
+.iconText{
+ margin-left: 10px;
+ color: gray;
+}
+
+/* footer */
+.foot{
+    display: flex;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding: 50px;
+    border-top: 0.5px solid rgb(116, 116, 116);
+}
+.foot li{
+    margin: 20px;
+    list-style: none;
+}
+.footers{
+    background-color: black;
+    text-align: center;
+    color: #F7F0FF;
+}
+.iconed{
+    margin: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 30px;
+}
+.allIcon{
+    margin-top: 20px;
+}
+
+.viewAllBtn{
+    display: none;
+}
+
+
+ /* Responsibe */
+
+ /* and (max-width: 767px)  */
+
+ @media only screen and (max-width:448px) {
+    .card {
+        grid-template-columns:1fr;
+        width: 300px;
+      }
+      .HomeBody{
+        display: block;
+        }
+        .half-width{
+            display: block;
+            background-color: black;
+            margin: 40px 0px 40px 0px;
+            border-radius: 20px;
+        }
+        .HeaderText{
+            width: 200px;
+            padding: 30px;
+            margin-left: 50px;
+        }
+        
+        .foot{
+            display: block;
+            text-align: center;
+            border-top: 0.5px solid rgb(116, 116, 116);
+        }
+  }
+
+
+  @media only screen and (max-width: 776px) {
+    .card {
+        grid-template-columns:1fr 1fr;
+        width: 600px;
+      }
+      .HomeBody{
+        display: block;
+        }
+        .half-width{
+            display: block;
+            background-color: black;
+            margin: 40px 0px 40px 0px;
+            border-radius: 20px;
+        }
+        .HeaderText{
+            width: 200px;
+            padding: 30px;
+            margin-left: 50px;
+        }
+        .foot{
+            display: block;
+            text-align: center;
+            border-top: 0.5px solid rgb(116, 116, 116);
+        }
+        .viewAllBtn{
+            display: block;
+            background-color: red;
+            color: #F7F0FF;
+            height: 30px;
+            margin-left: 150px;
+            border: none;
+            border-radius:10px;
+        }
+  }
